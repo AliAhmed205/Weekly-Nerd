@@ -11,9 +11,13 @@ function typeWriter() {
 
 typeWriter()
 
-
 async function readMe() {
-    const response = await fetch("fetch(`https://raw.githubusercontent.com/AliAhmed205/repository/main/process.md`)");
-    const data = await response.json();
+    const response = await fetch("https://raw.githubusercontent.com/AliAhmed205/Weekly-Nerd/main/week1.md");
+    const data = await response.text();
     console.log(data);
-  }
+
+    const text = document.getElementById('polypane');
+    text.textContent = data;
+}
+
+readMe();
