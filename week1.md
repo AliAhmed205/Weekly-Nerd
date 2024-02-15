@@ -3,6 +3,13 @@
 <br>
 <h2>Stop met JavaScript</h2>
 
+```js
+                async function logMovies() {
+  const response = await fetch("http://example.com/movies.json");
+  const movies = await response.json();
+  console.log(movies);
+```
+
 <p>
                 Met meer dan 20 jaar ervaring in het bouwen van websites, een rol in het Electron Governance Team en het
                 creëren van een browser voor Polypane, heeft Kilian Valkhof een schat aan kennis op het gebied van
@@ -22,6 +29,7 @@
                 van nieuwe
                 functionaliteiten eerst te onderzoeken of er al een ingebouwde oplossing beschikbaar is in plaats van te
                 vertrouwen op JavaScript.</p>
+
 
 <p>In zijn presentatie illustreert Valkhof verschillende voorbeelden van functionaliteiten die voorheen
                 vaak met JavaScript werden geïmplementeerd, maar nu efficiënter kunnen worden bereikt met behulp van
