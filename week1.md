@@ -1,3 +1,6 @@
+<img width="70%" src="./content/logo-polypane.png" alt="Polypane-Logo">
+<br>
+<br>
 <h2>Stop met JavaScript</h2>
 
 <p>
