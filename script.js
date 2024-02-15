@@ -16,8 +16,11 @@ async function readMe() {
     const data = await response.text();
     console.log(data);
 
+    const converter = new showdown.Converter();
+    const html = converter.makeHtml(data);
+
     const text = document.getElementById('polypane');
-    text.textContent = data;
+    text.innerHTML = html;
 }
 
 readMe();
