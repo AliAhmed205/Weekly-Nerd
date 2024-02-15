@@ -1,4 +1,4 @@
-<img width="70%" src="./content/logo-polypane.png" alt="Polypane-Logo">
+<img width="60%" src="https://polypane.app/general/logo.png" alt="">
 <br>
 <br>
 <h2>Stop met JavaScript</h2>
