@@ -3,11 +3,19 @@ let txt = 'Welcome to my Weekly Nerd Blog! Explore the latest in web development
 let speed = 20;
 const w1Button = document.getElementById('w1');
 const w2Button = document.getElementById('w2');
+const goalsButton = document.getElementById('doelen');
 const sectionWeek1 = document.getElementById('week1');
 const sectionWeek2 = document.getElementById('week2');
+const sectionMyGoals = document.getElementById('myGoals');
+
+setTimeout(() => {
+    sectionMyGoals.style.display = "block";
+    sectionMyGoals.classList.add("active", "slideUp");
+}, 0); 
 
 w1Button.addEventListener("click", () => {
     if (!sectionWeek1.classList.contains("active")) {
+        w1Button.classList.add("remove")
         const activeSection = document.querySelector('.active');
         if (activeSection) {
             activeSection.classList.remove("active", "slideUp");
@@ -36,6 +44,23 @@ w2Button.addEventListener("click", () => {
         setTimeout(() => {
             sectionWeek2.style.display = "block";
             sectionWeek2.classList.add("active", "slideUp");
+        }, 0); 
+    }
+});
+
+goalsButton.addEventListener("click", () => {
+    if (!sectionMyGoals.classList.contains("active")) {
+        const activeSection = document.querySelector('.active');
+        if (activeSection) {
+            activeSection.classList.remove("active", "slideUp");
+            setTimeout(() => {
+                activeSection.style.display = "none";
+            }, 0);
+        }
+
+        setTimeout(() => {
+            sectionMyGoals.style.display = "block";
+            sectionMyGoals.classList.add("active", "slideUp");
         }, 0); 
     }
 });

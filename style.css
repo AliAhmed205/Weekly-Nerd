@@ -253,10 +253,55 @@ aside button:focus {
     border-radius: 10px;
 }
 
+.focus {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.5s;
+    background-color: rgba(183, 255, 231, 0.797);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
 hr {
     margin: 0.5rem 0;
     width: 30%;
 }
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: block;
+    }
+
+    main section {
+        margin: 0;
+        padding: 1em;
+    }
+
+    main section h1 {
+        font-size: 1rem;
+    }
+
+    main section h2 {
+        font-size: 0.9rem;
+    }
+
+    main section p {
+        font-size: 0.7rem;
+    }
+
+    main section img:first-of-type {
+        width: 50%;
+    }
+
+    aside {
+        background-color: white;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.316) 0 0 20px;
+        animation: none;
+    }
+}
+
 
 
 @keyframes fadeIn {
