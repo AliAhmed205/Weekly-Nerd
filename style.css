@@ -16,6 +16,12 @@ body {
     --background-color:
 }
 
+header nav {
+    display: none;
+}
+
+
+
 aside {
     background-color: white;
     max-width: 320px;
@@ -109,6 +115,7 @@ main p {
     width: 100%;
     margin: 0 0 1em 0;
     height: fit-content;
+
 }
 
 aside h2 {
@@ -273,6 +280,10 @@ hr {
         display: block;
     }
 
+    aside {
+        display: none;
+    }
+
     main section {
         margin: 0;
         padding: 1em;
@@ -293,12 +304,69 @@ hr {
     main section img:first-of-type {
         width: 50%;
     }
-
-    aside {
-        background-color: white;
+    header nav {
+        display: flex;
         width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.316) 0 0 20px;
-        animation: none;
+        height: fit-content;
+        padding: 1em 2em;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Fredoka", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header nav h1 {
+        font-weight: 500;
+    }
+
+    header nav img {
+        width: 10%;
+    }
+
+    header nav p:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    header nav span {
+        width: 30px;
+        height: 2px;
+        border-radius: 20px;
+        background-color: black;
+    }
+
+    #burgerMenu { 
+        transform: translateX(500px);
+        position: absolute;
+        top: 4rem;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        padding: 0 2rem;
+        transition: 0.5s ease-in-out;
+    }
+
+    #burgerMenu.burgerActive {
+        transform: translateX(0);
+        transition: 0.5s ease-in-out;
+        z-index: 1;
+
+    }
+
+    #burgerMenu hr {
+        width: 100%;
+    }
+    #burgerMenu button {
+        font-family: "Fredoka", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        font-size: 1.5rem;
+        transition: 0.5s;
+        display: inline-block;
+        border: none;
+        background-color: transparent;
     }
 }
 
