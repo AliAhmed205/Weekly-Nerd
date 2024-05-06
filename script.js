@@ -1,92 +1,71 @@
-let i = 0;
-let txt = 'Welcome to my Weekly Nerd Blog! Explore the latest in web development through the eyes of industry speakers. Join me weekly as they share their insights, tech discoveries, and passion for coding, keeping me at the forefront of this dynamic field. Let us dive in!';
-let speed = 20;
-const w1Button = document.querySelector('.w1');
-const w2Button = document.querySelector('.w2');
-const goalsButton = document.querySelector('.doelen');
-const sectionWeek1 = document.querySelector('.week1');
-const sectionWeek2 = document.querySelector('.week2');
-const sectionMyGoals = document.querySelector('.myGoals');
-const menuIcon = document.getElementById('hamburgerMenu');
-const burgerMenu = document.getElementById('burgerMenu');
-const menuItems = document.querySelectorAll('#burgerMenu button');
-
-
+let i = 0,
+  txt = 'Welkom op mijn Weekly Nerd Blog! Ontdek de nieuwste ontwikkelingen in webontwikkeling met inzichten van experts uit de industrie. Sluit je wekelijks bij me aan om op de hoogte te blijven van dit dynamische vakgebied. Laten we beginnen!',
+  speed = 20,
+  w1Button = document.querySelector('.w1'),
+  w2Button = document.querySelector('.w2'),
+  goalsButton = document.querySelector('.doelen'),
+  sectionWeek1 = document.querySelector('.week1'),
+  sectionWeek2 = document.querySelector('.week2'),
+  sectionMyGoals = document.querySelector('.myGoals'),
+  menuIcon = document.getElementById('hamburgerMenu'),
+  burgerMenu = document.getElementById('burgerMenu'),
+  menuItems = document.querySelectorAll('#burgerMenu button');
 
 menuIcon.addEventListener("click", () => {
-    burgerMenu.classList.toggle("burgerActive")
-})
+  burgerMenu.classList.toggle("burgerActive")
+});
 
 menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-        burgerMenu.classList.remove('burgerActive');
-    });
+  item.addEventListener('click', () => {
+    burgerMenu.classList.remove('burgerActive');
+  })
 });
 
 setTimeout(() => {
-    sectionMyGoals.style.display = "block";
-    sectionMyGoals.classList.add("active", "slideUp");
-}, 0); 
+  sectionMyGoals.style.display = "block";
+  sectionMyGoals.classList.add("active", "slideUp");
+}, 0);
+
+function showSection(section) {
+  const activeSection = document.querySelector('.active');
+  if (activeSection) {
+    activeSection.classList.remove("active", "slideUp");
+    setTimeout(() => {
+      activeSection.style.display = "none";
+    }, 0);
+  }
+  setTimeout(() => {
+    section.style.display = "block";
+    section.classList.add("active", "slideUp");
+  }, 0);
+}
 
 w1Button.addEventListener("click", () => {
-    if (!sectionWeek1.classList.contains("active")) {
-        w1Button.classList.add("remove")
-        const activeSection = document.querySelector('.active');
-        if (activeSection) {
-            activeSection.classList.remove("active", "slideUp");
-            setTimeout(() => {
-                activeSection.style.display = "none";
-            }, 0);
-        }
-
-        setTimeout(() => {
-            sectionWeek1.style.display = "block";
-            sectionWeek1.classList.add("active", "slideUp");
-        }, 0); 
-    }
+  if (!sectionWeek1.classList.contains("active")) {
+    w1Button.classList.add("remove");
+    showSection(sectionWeek1);
+  }
 });
 
 w2Button.addEventListener("click", () => {
-    if (!sectionWeek2.classList.contains("active")) {
-        const activeSection = document.querySelector('.active');
-        if (activeSection) {
-            activeSection.classList.remove("active", "slideUp");
-            setTimeout(() => {
-                activeSection.style.display = "none";
-            }, 0);
-        }
-
-        setTimeout(() => {
-            sectionWeek2.style.display = "block";
-            sectionWeek2.classList.add("active", "slideUp");
-        }, 0); 
-    }
+  if (!sectionWeek2.classList.contains("active")) {
+    showSection(sectionWeek2);
+  }
 });
 
 goalsButton.addEventListener("click", () => {
-    if (!sectionMyGoals.classList.contains("active")) {
-        const activeSection = document.querySelector('.active');
-        if (activeSection) {
-            activeSection.classList.remove("active", "slideUp");
-            setTimeout(() => {
-                activeSection.style.display = "none";
-            }, 0);
-        }
-
-        setTimeout(() => {
-            sectionMyGoals.style.display = "block";
-            sectionMyGoals.classList.add("active", "slideUp");
-        }, 0); 
-    }
+  if (!sectionMyGoals.classList.contains("active")) {
+    showSection(sectionMyGoals);
+  }
 });
 
 function typeWriter() {
-    const aboutBio = document.querySelector('.about');
-    if (i < txt.length) {
-        aboutBio.innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
+  const aboutBio = document.querySelector('.about');
+  if (i < txt.length) {
+    aboutBio.innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 
 setTimeout(typeWriter, 5000);
