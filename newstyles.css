@@ -351,6 +351,7 @@ footer {
     z-index: 1;
 
     nav {
+    height: 5rem;
       div:first-of-type {
         margin: 0 2rem;
 
@@ -502,6 +503,9 @@ footer {
   footer {
     nav {
 
+      h1 {
+        font-size: 1rem;
+      }
 
       ul {
         display: none;
