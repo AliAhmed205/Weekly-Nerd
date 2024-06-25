@@ -1,112 +1,93 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journaling by Ali</title>
-  <link rel="stylesheet" href="./newstyles.css">
-  <link rel="shortcut icon" href="./content/message-favicon.svg" type="image/x-icon">
+  <title>Ali Ahmed | Weekly Nerd</title>
+  <link rel="stylesheet" href="./new-styling.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div>
-        <img src="./content/message.svg" alt="message-icon">
-        <div>
-          <h1><a href="">Journaling</a></h1>
-          <h2>by Ali Ahmed</h2>
-        </div>
-      </div>
-      <ul>
-        <li><a href="./weeklynerd.html">Weekly Nerd</a></li>
-        <li><a href="./hackathon.html">Hackaton</a></li>
-        <li><a href="./meesterproef.html">Leerdoelen</a></li>
-        <li><a href="./evaluatie.html">Evaluatie</a></li>
-
-      </ul>
-      <div role="button" id="hamburgerMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
   <main>
-    <section id="menuSection">
-      <div>
-      <h1>Menu</h1>
-        <button id="close" type="button">&#x2715;</button>
-    </div>
+    <nav>
       <ul>
-      <li><a href="./index.html">Home</a></li>
-      <hr>
-      <li><a href="./weeklynerd.html">Weekly Nerd</a></li>
-      <hr>
-      <li><a href="./hackathon.html">Hackaton</a></li>
-      <hr>
-      <li><a href="./meesterproef.html">Leerdoelen</a></li>
-      <hr>
-      <li><a href="./evaluatie.html">Evaluatie</a></li>
-    </ul>
+        <li><a href="#speakers-header">SPEAKERS</a></li>
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">FINAL-ASSESSMENT</a></li>
+      </ul>
+    </nav>
+    <section class="homepage-header">
+      <div class="overlay-load">
+        <h1>PRESENTING</h1>
+      </div>
+      <h1 class="homepage-title">WEEKLY NERD</h1>
     </section>
-    <section class="myGoals">
-      <h1>Welkom bij mijn wekelijkse Nerd Blog! Verken het nieuwste op het gebied van webontwikkeling door de ogen van
-        professionals uit de industrie. Sluit je wekelijks bij me aan terwijl ze hun inzichten, technologische
-        ontdekkingen en passie voor coderen delen, waardoor ik altijd op de hoogte blijf van dit dynamische vakgebied.
-        Laten we erin duiken!
-      </h1>
-      <h2>Minor Doel</h2>
-      <p>De minor Web Design & Development biedt een uitgebreid programma waarin ik
-        interactieve toepassingen leer
-        maken met HTML, CSS en JavaScript. Door middel van verschillende vakken en projecten wordt mijn kennis
-        verbreed en verdiept op het gebied van webontwikkeling. Ik leer niet alleen over browsers, performance
-        en usability, maar ook over documenteren, versiebeheer, debuggen, testen, responsiviteit, het gebruik
-        van API's en meer.</p>
-      <p>Deze minor is geschikt voor mij, aangezien ik leergierig en gedreven ben, en affiniteit heb met techniek. Ik
-        wil
-        excelleren in het creëren van interactieve webapplicaties.Het lesprogramma is gericht op het behalen van
-        verschillende leerdoelen, zoals het ontwerpen en
-        verbeteren van interfaces, het gebruik van nieuwe webtechnologieën, het opzetten en uitvoeren van
-        projecten waarin ontwerp en ontwikkeling samenkomen, en het realiseren van websites die toegankelijk
-        zijn op elk apparaat en voor alle gebruikers.
-      </p>
-      <p>
-        Met vakken zoals <b>"Web App from Scratch"</b>, <b>"CSS to the Rescue"</b>, <b>"Browser Technologies"</b>,
-        <b>"Human Centred
-          Design"</b> en <b>"API"</b>, krijg ik een uitgebreide training in het ontwerpen en bouwen van webapplicaties.
-        Daarnaast zijn er wekelijkse presentaties en gastcolleges om mijn kennis te verbreden en contacten te
-        leggen in het werkveld.
-      </p>
-
-      <p>Het hoogtepunt van de minor is de <a href="">Meesterproef</a>, waarin ik de opgedane kennis en vaardigheden
-        toepas om
-        een echte oplossing te ontwerpen voor een opdrachtgever. Hierbij werk ik aan het ontwikkelen van een
-        website die aan alle eisen voldoet en waar ik trots op kan zijn.
-
-        Door het volgen van deze minor hoop ik mijn webdevelopment skills te verbeteren, met name op het gebied
-        van werken met data en API's. Ik ben enthousiast om meer te leren over webtechnologieën en om mijn
-        kennis van JavaScript te verdiepen voor de front-end. Ik voel me nu al thuis op deze minor en kijk uit
-        naar het verdere programma waarin ik mijn vaardigheden verder kan ontwikkelen.
-      </p>
-
+    <section id="speakers-header" class="speakers-header">
+      <section id="side-scroll">
+        <div class="speakers-intro">
+          <h2>WEEKLY SPEAKERS</h2>
+        <p>During the minor program, various industry professionals were invited to 
+          speak about their careers and current developments in web development trends.
+        </p>
+      </div>
+        <a href="#" id="killian" class="scroll-content">
+          <h2>Kilian Valkhof</h2>
+          <h3>Week 1</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Fenna de Wilde</h2>
+          <h3>Week 2</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Jeffrey Arts</h2>
+          <h3>Week 3</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Nils Binder</h2>
+          <h3>Week 4</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Jeremy Keith</h2>
+          <h3>Week 5</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Julia Miocene</h2>
+          <h3>Week 6</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Digitaal<br>Toegankelijkheid</h2>
+          <h3>Week 8</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Rose Schuurman</h2>
+          <h3>Week 9</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Robert Spier</h2>
+          <h3>Week 14</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Q42</h2>
+          <h3>Week 15</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Waag<br>FutureLab</h2>
+          <h3>Week 16</h3>
+        </a>
+        <a href="#" class="scroll-content">
+          <h2>Pre CSS Day</h2>
+          <h3>Week 17</h3>
+        </a>
+      </section>
     </section>
   </main>
   <footer>
-    <nav>
-      <h1>© Ali Ahmed 2024</h1>
-      <ul>
-        <li><a href="https://github.com/AliAhmed205?tab=repositories">GitHub<a>
-        <li>
-        <li><a href="https://aliahmed205.github.io/web-app-from-scratch-2324/">WAFS</a></li>
-        <li><a href="https://aliahmed205.github.io/CSS2TheRescue">CCS to the Rescue</a></li>
-        <li><a href="https://github.com/AliAhmed205/browserTechnology">Browser Technology<a></li>
-        <li><a href="https://aliahmed205.github.io/HumanCenteredDesign/">Human Centered Design</a></li>
-      </ul>
-    </nav>
+    <h5>© Ali Ahmed 2024 | Minor Web Design & Development</h5>
   </footer>
-  <script src="./script.js"></script>
+  <div id="backgroundImage"></div>
+  <script src="./new-js.js"></script>
 </body>
-
-</html>
+</html> 
