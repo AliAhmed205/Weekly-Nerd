@@ -44,87 +44,87 @@ body {
 }
 
 /* First List-item Styling Hover  */
-html:has(main nav ul li:first-of-type a:hover, main nav ul li:first-of-type a:focus) #backgroundImage {
+html:has(main nav ul li:first-of-type a:hover, main nav:first-of-type ul li:first-of-type a:focus) #backgroundImage {
   background-color: crimson;
 }
 
-html:has(main nav ul li:first-of-type a:hover, main nav ul li:first-of-type a:focus) .homepage-header {
+html:has(main nav:first-of-type ul li:first-of-type a:hover, main nav:first-of-type ul li:first-of-type a:focus) .homepage-header {
   color: #680000;
 }
 
-html:has(main nav ul li:first-of-type a:hover, main nav ul li:first-of-type a:focus) footer {
+html:has(main nav:first-of-type ul li:first-of-type a:hover, main nav:first-of-type ul li:first-of-type a:focus) footer {
   color: #680000;
 }
 
-html:has(main nav ul li:first-of-type a:hover, main nav ul li:first-of-type a:focus) main nav ul li a {
+html:has(main nav:first-of-type ul li:first-of-type a:hover, main nav:first-of-type ul li:first-of-type a:focus) main nav:first-of-type ul li a {
   color: #680000;
 }
 
-html:has(main nav ul li:first-of-type a:hover, main nav ul li:first-of-type a:focus) main nav ul li:nth-of-type(1) a {
+html:has(main nav:first-of-type ul li:first-of-type a:hover, main nav:first-of-type ul li:first-of-type a:focus) main nav:first-of-type ul li:nth-of-type(1) a {
   color: white;
 }
 
 
 /* Second List-item Styling Hover  */
-html:has(main nav ul li:nth-of-type(2) a:hover, main nav ul li:nth-of-type(2) a:focus) #backgroundImage {
+html:has(main nav:first-of-type ul li:nth-of-type(2) a:hover, main nav:first-of-type ul li:nth-of-type(2) a:focus) #backgroundImage {
   background-color: blue;
 }
 
-html:has(main nav ul li:nth-of-type(2) a:hover, main nav ul li:nth-of-type(2) a:focus) .homepage-header {
+html:has(main nav:first-of-type ul li:nth-of-type(2) a:hover, main nav:first-of-type ul li:nth-of-type(2) a:focus) .homepage-header {
   color: turquoise;
 }
 
-html:has(main nav ul li:nth-of-type(2) a:hover, main nav ul li:nth-of-type(2) a:focus) footer {
+html:has(main nav:first-of-type ul li:nth-of-type(2) a:hover, main nav:first-of-type ul li:nth-of-type(2) a:focus) footer {
   color: turquoise;
 }
 
-html:has(main nav ul li:nth-of-type(2) a:hover, main nav ul li:nth-of-type(2) a:focus) main nav ul li a {
+html:has(main nav:first-of-type ul li:nth-of-type(2) a:hover, main nav:first-of-type ul li:nth-of-type(2) a:focus) main nav:first-of-type ul li a {
   color: turquoise;
 }
 
-html:has(main nav ul li:nth-of-type(2) a:hover, main nav ul li:nth-of-type(2) a:focus) main nav ul li:nth-of-type(2) a {
+html:has(main nav:first-of-type ul li:nth-of-type(2) a:hover, main nav:first-of-type ul li:nth-of-type(2) a:focus) main nav:first-of-type ul li:nth-of-type(2) a {
   color: white;
 }
 
 /* Third List-item Styling Hover  */
-html:has(main nav ul li:nth-of-type(3) a:hover, main nav ul li:nth-of-type(3) a:focus) #backgroundImage {
+html:has(main nav:first-of-type ul li:nth-of-type(3) a:hover, main nav:first-of-type ul li:nth-of-type(3) a:focus) #backgroundImage {
   background-color: rgb(163, 131, 48);
 }
 
-html:has(main nav ul li:nth-of-type(3) a:hover, main nav ul li:nth-of-type(3) a:focus) .homepage-header {
+html:has(main nav:first-of-type ul li:nth-of-type(3) a:hover, main nav:first-of-type ul li:nth-of-type(3) a:focus) .homepage-header {
   color: #dede34;
 }
 
-html:has(main nav ul li:nth-of-type(3) a:hover, main nav ul li:nth-of-type(3) a:focus) footer {
+html:has(main nav:first-of-type ul li:nth-of-type(3) a:hover, main nav:first-of-type ul li:nth-of-type(3) a:focus) footer {
   color: #dede34;
 }
 
-html:has(main nav ul li:nth-of-type(3) a:hover, main nav ul li:nth-of-type(3) a:focus) main nav ul li a {
+html:has(main nav:first-of-type ul li:nth-of-type(3) a:hover, main nav:first-of-type ul li:nth-of-type(3) a:focus) main nav:first-of-type ul li a {
   color: #dede34;
 }
 
-html:has(main nav ul li:nth-of-type(3) a:hover, main nav ul li:nth-of-type(3) a:focus) main nav ul li:nth-of-type(3) a {
+html:has(main nav:first-of-type ul li:nth-of-type(3) a:hover, main nav:first-of-type ul li:nth-of-type(3) a:focus) main nav:first-of-type ul li:nth-of-type(3) a {
   color: white;
 }
 
 /* Fourth List-item Styling Hover  */
-html:has(main nav ul li:nth-of-type(4) a:hover, main nav ul li:nth-of-type(4) a:focus) #backgroundImage {
+html:has(main nav:first-of-type ul li:nth-of-type(4) a:hover, main nav:first-of-type ul li:nth-of-type(4) a:focus) #backgroundImage {
   background-color: rgb(0, 139, 44);
 }
 
-html:has(main nav ul li:nth-of-type(4) a:hover, main nav ul li:nth-of-type(4) a:focus) .homepage-header {
+html:has(main nav:first-of-type ul li:nth-of-type(4) a:hover, main nav:first-of-type ul li:nth-of-type(4) a:focus) .homepage-header {
   color: greenyellow;
 }
 
-html:has(main nav ul li:nth-of-type(4) a:hover, main nav ul li:nth-of-type(4) a:focus) footer {
+html:has(main nav:first-of-type ul li:nth-of-type(4) a:hover, main nav:first-of-type ul li:nth-of-type(4) a:focus) footer {
   color: greenyellow;
 }
 
-html:has(main nav ul li:nth-of-type(4) a:hover, main nav ul li:nth-of-type(4) a:focus) main nav ul li a {
+html:has(main nav:first-of-type ul li:nth-of-type(4) a:hover, main nav:first-of-type ul li:nth-of-type(4) a:focus) main nav:first-of-type ul li a {
   color: greenyellow;
 }
 
-html:has(main nav ul li:nth-of-type(4) a:hover, main nav ul li:nth-of-type(4) a:focus) main nav ul li:nth-of-type(4) a {
+html:has(main nav:first-of-type ul li:nth-of-type(4) a:hover, main nav:first-of-type ul li:nth-of-type(4) a:focus) main nav:first-of-type ul li:nth-of-type(4) a {
   color: white;
 }
 
@@ -134,7 +134,11 @@ main {
   position: relative;
   /* overflow-x: hidden; */
 
-  & nav {
+  & #mobile-navigation {
+    display: none;
+  }
+
+  & nav:first-of-type {
     animation: fadeIn .5s 5s backwards;
 
     & ul {
@@ -227,11 +231,11 @@ main {
         animation: fadeIn 2s 1s backwards;
         opacity: 1;
         font-size: 1.5rem;
-      
-      &::before,
-      &::after {
-        content: "";
-      }
+
+        &::before,
+        &::after {
+          content: "";
+        }
       }
 
     }
@@ -280,7 +284,7 @@ main {
         text-decoration: none;
         filter: grayscale(1);
         transition: filter .5s;
-      
+
         h2 {
           margin: 0;
           justify-content: center;
@@ -307,27 +311,27 @@ main {
           padding: 1rem 1.5rem;
           border-radius: 0 10% 10% 0;
           font-size: .9rem;
-          font-style :oblique;
+          font-style: oblique;
         }
-      
+
         &:hover,
         &:focus {
           filter: grayscale(0);
-      
+
           h2 {
             pointer-events: all;
             opacity: 1;
           }
         }
       }
-      
+
       /* Kilian Valkhof */
       .scroll-content:nth-of-type(1) {
-        background-image: url('./images/kilian-valkhof.jpg');
+        background-image: url('./images/wowzers.gif');
         background-position: 99% 50%;
         background-size: 150%;
         transition: .5s;
-      
+
         &:hover,
         &:focus {
           background-size: 195%;
@@ -335,18 +339,19 @@ main {
           transform-origin: center;
         }
       }
-      
+
       /* Fenna De Wilde */
       .scroll-content:nth-of-type(2) {
-        background-image: url('./images/fenna-de-wilde.jpg');
+        /* background-image: url('./images/fenna-de-wilde.jpg'); */
+        background-image: url('./images/fenna2.gif');
         background-position: center center;
-        background-size: 150%;
+        background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
-          background-size: 195%;
+          background-size: 210%;
           background-position: center center;
           transform-origin: center;
         }
@@ -354,12 +359,13 @@ main {
 
       /* Jeffrey Arts */
       .scroll-content:nth-of-type(3) {
+        /* background-image: url('./images/foto-jeffrey-vierkant.jpg'); */
         background-image: url('./images/foto-jeffrey-vierkant.jpg');
         background-position: center center;
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -370,12 +376,13 @@ main {
 
       /* Nils Binder */
       .scroll-content:nth-of-type(4) {
-        background-image: url('./images/nilsbinder.jpeg');
+        background-image: url('./images/nils.gif');
+        /* background-image: url('./images/nilsbinder.jpeg'); */
         background-position: center center;
         background-size: 100%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 120%;
@@ -386,16 +393,17 @@ main {
 
       /* Jeremy Keith  */
       .scroll-content:nth-of-type(5) {
-        background-image: url('./images/jeremy_keith_smiling.jpg');
-        background-position:  70%;
+        background-image: url('./images/jeremy.gif');
+        /* background-image: url('./images/jeremy_keith_smiling.jpg'); */
+        background-position: 70%;
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 220%;
-          background-position:  70%;
+          background-position: 70%;
           transform-origin: center;
         }
       }
@@ -407,7 +415,7 @@ main {
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -418,12 +426,13 @@ main {
 
       /* Digitaal Toengankelijkheid  */
       .scroll-content:nth-of-type(7) {
-        background-image: url('./images/pim-jobs.jpg');
+        background-image: url('./images/job.gif');
+        /* background-image: url('./images/pim-jobs.jpg'); */
         background-position: 44%;
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -439,7 +448,7 @@ main {
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -450,12 +459,13 @@ main {
 
       /* Robert Spier  */
       .scroll-content:nth-of-type(9) {
-        background-image: url('./images/robertspier.jpg');
+        background-image: url('./images/robert.gif');
+        /* background-image: url('./images/robertspier.jpg'); */
         background-position: center center;
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -471,7 +481,7 @@ main {
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -482,12 +492,13 @@ main {
 
       /* Waag FutureLabs */
       .scroll-content:nth-of-type(11) {
-        background-image: url('./images/marit-hoefsloot.jpg');
+        background-image: url('./images/maurit.gif');
+        /* background-image: url('./images/marit-hoefsloot.jpg'); */
         background-position: center center;
         background-size: 200%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 255%;
@@ -503,7 +514,7 @@ main {
         background-size: 140%;
         transition: .5s;
 
-      
+
         &:hover,
         &:focus {
           background-size: 150%;
@@ -519,7 +530,7 @@ main {
         aspect-ratio: 1/1;
         background-color: red;
         width: 30rem;
-        border-radius: 3%; 
+        border-radius: 3%;
         transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       }
     }
@@ -542,16 +553,58 @@ footer {
 
 @media (max-width: 430px) {
   main {
+    overflow-x: hidden;
 
-    nav {
+    & nav:first-of-type {
       display: none;
     }
 
-    .homepage-header {
+    & #mobile-navigation {
+      display: flex;
+      width: 100%;
+      margin-left: auto;
+      justify-content: end;
+      position: fixed;
+      transition: .5s;
+      z-index: 99;
+      background-color: rgba(30, 30, 30, 0);
+
+      .hamburger {
+        background-color: transparent;
+        border: none;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        position: relative;
+
+        .bar {
+          display: block;
+          background-color: black;
+          width: 2rem;
+          left: 0;
+          height: .2rem;
+          border-radius: 5rem;
+        }
+      }
+    }
+
+    #mobile-navigation.scroll {
+      background-color: rgb(14, 14, 14);
+      .hamburger {
+        .bar {
+          background-color: white;
+        }
+      }
+    }
+
+    & .homepage-header {
       height: 100lvh;
+      overflow-y: scroll;
+
 
       & h1 {
-        font-size: 1rem;
+        font-size: 2rem;
 
         &::before {
           content: "ALI AHMED";
@@ -579,23 +632,32 @@ footer {
       display: flex;
       flex-direction: column;
       height: fit-content;
+      overflow-x: scroll;
+
 
       #side-scroll {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin: 0;
-        gap: 0;
+        gap: 4rem;
 
         .scroll-content {
-        filter: grayscale(0);
+          filter: grayscale(0);
         }
 
         .speakers-intro {
+          margin-top: 5rem;
           width: fit-content;
+          padding: 0 3rem;
+
+          h2 {
+            font-size: 1.3rem;
+          }
         }
+
         a {
           width: 20rem;
-          margin: 2rem;
           filter: none;
         }
       }
@@ -617,7 +679,9 @@ footer {
 @keyframes fadeIn {
   from {
     opacity: 0;
-  } to {
+  }
+
+  to {
     opacity: 1;
   }
 }
