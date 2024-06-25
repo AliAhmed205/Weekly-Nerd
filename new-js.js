@@ -29,4 +29,27 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNav.classList.remove('scroll');
     }
   });
+
+  const menuBtn = document.getElementById('open-button');
+  const menuList = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('close');
+  
+  // Event listener voor de open-button
+  menuBtn.addEventListener('click', () => {
+    menuList.classList.add('show');
+  });
+  
+  // Event listener voor de close-button
+  closeBtn.addEventListener('click', () => {
+    menuList.classList.remove('show');
+  });
+  
+  // Event listener voor elk a-element binnen het menu
+  const menuItems = menuList.querySelectorAll('a');
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menuList.classList.remove('show');
+    });
+  });  
+
 });
