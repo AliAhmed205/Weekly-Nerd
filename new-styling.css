@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Bohme';
-  src: url('/fonts/bohme/Bohme.ttf');
+  src: url('./fonts/bohme/Bohme.ttf');
 }
 
 :root {
