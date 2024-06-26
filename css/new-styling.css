@@ -712,6 +712,7 @@ footer {
         margin: 0;
         justify-content: center;
         gap: 4rem;
+        margin-bottom: 5rem;
 
         & .scroll-content {
           filter: grayscale(0);
@@ -868,11 +869,12 @@ footer {
 
     .speakers-header {
      & #side-scroll {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        gap: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      gap: 4rem;
+      margin-bottom: 6rem;
       }
     }
   }
