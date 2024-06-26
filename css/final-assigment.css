@@ -139,8 +139,8 @@ main {
       background-image: url('../images/kunstinc.png');
       height: 659px;
       background-repeat: no-repeat;
-      background-position: 20%;
-      background-size: cover;
+      background-position: 50%;
+      background-size: 100%;
       width: 600px;
       border-radius: 0 5% 5% 0;
 
