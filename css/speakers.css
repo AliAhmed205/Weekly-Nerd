@@ -695,6 +695,15 @@ main {
           font-size: .8rem;
         }
       }
+      & .speaker-img-dewaag {
+        height: 400px;
+        width: 364px;
+        margin-bottom: 1rem;
+
+        & h1 {
+          font-size: .8rem;
+        }
+      }
 
       & .speaker-img-cssday {
         height: 400px;
