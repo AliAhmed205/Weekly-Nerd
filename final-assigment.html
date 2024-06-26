@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeremy Keith | Weekly Nerd</title>
+  <link rel="stylesheet" href="./css/final-assigment.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">
+        <h1 class="nav-title">WEEKLY NERD</h1>
+      </a>
+      <ul>
+        <li><a href="./index.html/#speakers-header">SPEAKERS</a></li>
+        <li><a href="./courses.html">COURSES</a></li>
+        <li><a href="./about-me.html">ABOUT ME</a></li>
+        <li><a href="./index.html">HOME</a></li>
+      </ul>
+    </nav>
+    <nav id="mobile-navigation">
+      <a href="./index.html">
+        <h1 class="nav-title">WEEKLY NERD</h1>
+      </a>
+      <button id="open-button" class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <section id="mobile-menu">
+        <ul>
+          <button id="close">&#10005;</button>
+          <li><a href="./index.html/#speakers-header">SPEAKERS</a></li>
+          <hr>
+          <li><a href="./courses.html">COURSES</a></li>
+          <hr>
+          <li><a href="./about-me.html">ABOUT ME</a></li>
+          <hr>
+          <li><a href="./index.html">HOME</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <main>
+    <article class="speakers-container">
+      <section class="speaker-img-kunstinc">
+        <h1>KUNST IN C</h1>
+      </section>
+      <section class="speakers-about">
+        <h2>About</h2>
+        <h3>Design and develop a website to showcase art in Castricum, featuring both permanent installations (with help
+          from Stichting Oud-Castricum’s inventory) and past temporary exhibits like Jimmy Nelson’s beach and dune
+          photos and Wheeping Elephant on the beach plateau. The design should be easily adaptable, potentially for
+          platforms like Wordpress, with integration capabilities we cannot manage ourselves. A preliminary design by
+          Ruben emphasizes artistic presentation aligned with the works, inspired by Volkskrant Story. The site should
+          facilitate communication with stakeholders via linked email addresses. We’ve secured the domain name
+          kunstinc.nl. Integration of fundraising efforts and a social media implementation plan are also desired.
+        </h3>
+      </section>
+      <section class="speaker-insights">
+        <h2>Thoughts on the project</h2>
+        <p>This was certainly the most challenging project I have ever worked on, not to mention my first official
+          website developed alongside my teammates. I thoroughly enjoyed developing my node.JS (EJS) coding skills,
+          especially in handling dynamic values. Despite not actually fetching anything in our local workspace,
+          integrating with PHP in WordPress posed a significant challenge. I never anticipated the amount of work
+          involved in setting everything up. We managed to create a custom CMS area for Femke, our project assigner,
+          within WordPress. Overall, I am very proud of my accomplishments, which I will discuss further in the
+          following paragraphs.</p>
+      </section>
+      <section class="speaker-insights">
+        <h2>SVG-logo Animation</h2>
+        <img class="code" src="./images/logo-hover.gif" alt="Animation-hover">
+        <p>I took great pride in animating the Kunst in C logo SVG. Through CSS, I manipulated its paths and groups to
+          achieve a smooth transition when users hovered over it. Additionally, I implemented a transformation with an
+          added BEM class, which activated when users scrolled past the starting point, simultaneously triggering the
+          appearance of the navigation bar.
+        </p>
+      </section>
+      <section class="speaker-insights">
+        <h2>Map Animation</h2>
+        <p>Another achievement I’m proud of is the interactive visual map of Castricum. When a user interacts with it,
+          the website’s name is replaced with the region’s name. Additional icons appear on top of the selected region,
+          while other interactive regions disappear, ensuring full user focus on the map section.
+        </p>
+        <img class="code" src="./images/animation-map.gif" alt="Animation-map">
+      </section>
+      <section class="speaker-insights">
+        <h2>What did I learn?</h2>
+        <ul class="learning-goals">
+          <li>Working with WordPress in a more advance way</li>
+          <li>Editing PHP, including dynamic assests and creating them in ACF</li>
+          <li>Utility classes and BEM</li>
+          <li>How important communication is with your teammates</li>
+          <li>Working with different branches on GitHub</li>
+          <li>And much more...</li>
+        </ul>
+      </section>
+      <section class="speakers-reflection">
+        <h2>💡 Reflection</h2>
+        <p>I learned more than I expected to do during this project. I did set a few goals but I learned much more than
+          I anticipated. Furthermore, I got inspired to use WordPress with PHP to create my own themes and such. I know
+          that the project is over, but I wouldn't mind doing a few things from the bottom of my coding-eagerness. I'm
+          glad I reached new heights and interests during this final assigment.</p>
+      </section>
+    </article>
+  </main>
+  <footer></footer>
+  <script src="./script/speakers.js"></script>
+</body>
+
+</html>
