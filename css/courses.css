@@ -22,12 +22,12 @@ body {
 }
 
 body {
-  background-color: rgb(228, 243, 255);
+  background-color: whitesmoke;
 }
 
 
 h2 {
-  font-family: var(--titel-font);
+  font-family: var(--brood-tekst);
   margin: .3rem 0;
   font-size: 1rem;
   color: #0000ff;
@@ -43,6 +43,11 @@ h4 {
   color: #0000ff;
   font-family: var(--titel-font);
   margin: 0.5rem 0;
+}
+
+.CTA {
+  color: #0000ff;
+  text-transform: uppercase;
 }
 
 header {
@@ -141,11 +146,9 @@ main {
   /* overflow-x: auto; */
   overflow: scroll;
 
-
-  h2 {
+  & h2:first-of-type {
     color: black;
   }
-
 
   & .courses-container {
     display: flex;
@@ -161,7 +164,9 @@ main {
     }
 
     a {
-      text-decoration: underline;
+      text-decoration: none;
+      color: #0000ff;
+
     h3 {
       font-family: var(--titel-font);
     }

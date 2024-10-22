@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
-
 @font-face {
   font-family: 'Bohme';
   src: url('../fonts/bohme/Bohme.ttf');
@@ -14,6 +12,15 @@
   --titel-font: 'Bohme';
   --weeks-font: "Major Mono Display", monospace;
   --brood-tekst: "Montserrat", sans-serif;
+  --speaker-red: #680000;
+  --final-assign: #134625;
+  --about-me: #b88d00;
+}
+
+
+*,
+body {
+  box-sizing: border-box;
 }
 
 html,
@@ -22,16 +29,129 @@ body {
 }
 
 body {
-  background-color: rgb(246, 255, 245);
+  background-color: whitesmoke;
 }
 
+body.kic {
 
+  & h2 {
+    color: var(--final-assign);
+  }
+
+  header {
+    nav {
+      & .nav-title {
+        color: var(--final-assign);
+      }
+    }
+  }
+
+  & .speaker.reflection {
+    background-color: var(--final-assign);
+  }
+
+  #mobile-navigation {
+    background-color: var(--final-assign);
+  }
+
+}
+
+body.about {
+
+  & h1 {
+    color: var(--about-me);
+  }
+
+  & .speaker.img {
+
+    & h1 {
+      background-color: var(--about-me);
+    }
+  }
+
+  & h2 {
+    color: var(--about-me);
+  }
+
+  header {
+    nav {
+      .nav-title {
+        color: var(--about-me);
+      }
+    }
+  }
+
+  & .speaker.reflection {
+    background-color: var(--about-me);
+  }
+
+  #mobile-navigation {
+    background-color: var(--about-me);
+  }
+
+  main {
+    ul {
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        a {
+          aspect-ratio: 1/1;
+          width: 2rem;
+          color: var(--about-me);
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .blank {
+    color: transparent;
+  }
+
+}
+
+.gd {
+  mix-blend-mode: multiply;
+}
+
+.critical {
+  width: 80%;
+}
+
+.gif {
+  width: 30%;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 1rem;
+  margin: .5rem 0;
+}
+
+ul {
+  padding: 0 1rem;
+
+  li {
+    color: var(--speaker-red);
+    font-family: var(--brood-tekst);
+
+    & span {
+      color: black;
+    }
+  }
+}
 
 h2 {
   font-family: var(--titel-font);
-  margin: 1rem 0;
   font-size: 1.2rem;
-  color: #134625;
+  color: var(--speaker-red);
+}
+
+p {
+  font-family: var(--brood-tekst);
 }
 
 h3 {
@@ -43,10 +163,12 @@ h3 {
 header {
   position: fixed;
   width: 100vw;
+  z-index: 2;
 
   & #mobile-navigation {
     display: none;
   }
+
 
   & nav:first-of-type {
     animation: fadeIn 1s .5s backwards;
@@ -59,6 +181,9 @@ header {
       text-decoration: none;
       color: black;
 
+      & .nav-title.kic {
+        color: var(--final-assign);
+      }
 
       & h1 {
         position: relative;
@@ -70,7 +195,7 @@ header {
         transition: .5s;
         margin-right: 3rem;
         cursor: pointer;
-        color: #134625;
+        color: var(--speaker-red);
 
         &::before {
           content: "ALI AHMED";
@@ -120,102 +245,189 @@ header {
           }
         }
       }
-
     }
   }
 }
 
 main {
-  & .speakers-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+  & .rosa {
+    margin-top: 10rem;
+  }
+
+  & section {
+    padding: 1rem;
+    position: relative;
     display: flex;
-    gap: 4rem;
-    overflow: auto;
-    width: 500vw;
-    padding-top: 7.3rem;
-    height: 84vh;
-    overflow-x: auto;
+    height: fit-content;
+    gap: 3rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-top: 3rem;
 
-    & .speaker-img-kunstinc {
-      background-image: url('../images/kunstinc.png');
-      height: 659px;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-size: 100%;
-      width: 600px;
-      border-radius: 0 5% 5% 0;
-
+    & .speaker.img.kic {
       & h1 {
-        color: white;
-        background-color: #134625;
-        padding: 1rem;
-        width: 40%;
-        font-family: var(--titel-font);
-        border-radius: 0 5% 5% 0;
+        background-color: var(--final-assign);
+      }
+
+      & img {
+        background-color: lightgreen;
       }
     }
 
+    & .speaker.img {
+      position: relative;
+      min-width: 500px;
 
-    & .speakers-about,
-    .speaker-insights,
-    .speakers-reflection {
-      display: flex;
-      flex-direction: column;
-      width: 5%;
-      font-family: var(--brood-tekst);
-
-      & .learning-goals {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+      & img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: right;
       }
 
-      & ul {
-        padding: 0 0 0 1rem;
 
-        & li {
-          color: black;
-        }
+      .fenna {
+        object-position: center;
       }
 
-      & p {
-        font-family: var(--brood-tekst);
-        font-size: 1rem;
-
+      & h1 {
+        position: absolute;
+        top: 0;
+        padding: 1rem 2rem;
+        color: whitesmoke;
+        background-color: var(--speaker-red);
+        font-family: var(--titel-font);
       }
+    }
 
-      & .blank {
-        color: transparent;
-        user-select: none;
+    .speaker {
+      min-width: 400px;
+      width: 30%;
+
+      & .code.mp {
+        width: 100%;
+        height: fit-content;
       }
 
       & .code {
-        border-radius: 3%;
+        width: 100%;
+        height: 45%;
+        object-fit: cover;
+      }
+
+      & .code.snippet {
+        height: 90%;
       }
     }
 
-    & .speakers-about {
-      img {
-        margin-top: 1rem;
+    .speaker.rosa-1 {
+
+      & img {
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
       }
     }
 
-    & .speakers-reflection {
-      background-color: #134625;
-      color: white;
-      padding: 2rem;
-      height: fit-content;
-      border-radius: 5%;
+    .speaker.jeffery {
+      display: flex;
+      flex-direction: column;
 
-      & h2 {
-        color: white;
+      & img {
+        margin: auto 0;
       }
+    }
+
+    .speaker.rosa {
+
+      & img {
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+      }
+    }
+
+
+    & img {
+      width: 100%;
+      margin: auto 0;
     }
   }
 }
 
-@media (max-width: 926px) {
+.button-container.mobile {
+  display: none;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  display: flex;
+  gap: 1rem;
+
+  & a {
+    font-family: var(--brood-tekst);
+    align-items: center;
+    flex-direction: flex;
+    text-decoration: none;
+    display: flex;
+    color: black;
+    gap: .3rem;
+    transition: .2s;
+
+    &:hover {
+      font-weight: 500;
+    }
+
+    & i {
+      color: var(--speaker-red);
+    }
+  }
+
+  & .invisible {
+    color: gray;
+    user-select: none;
+    pointer-events: none;
+
+    & i {
+      color: gray;
+    }
+  }
+}
+
+.speaker.reflection {
+  padding: 1rem;
+  background-color: var(--speaker-red);
+  border-radius: .5rem;
+  color: white;
+  height: fit-content;
+
+  & h2 {
+    color: white;
+    font-family: var(--brood-tekst);
+    text-transform: uppercase;
+  }
+}
+
+.blank {
+  color: transparent;
+  user-select: none;
+  pointer-events: none;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
   header {
-    background-color: #134625;
+    background-color: var(--speaker-red);
 
     & nav:first-of-type {
       display: none;
@@ -238,7 +450,7 @@ main {
     }
 
     & #mobile-navigation {
-      background-color: #134625;
+      background-color: var(--speaker-red);
       display: flex;
       width: 100%;
       margin-left: auto;
@@ -376,64 +588,38 @@ main {
   }
 
   main {
-    & .speakers-container {
-      display: flex;
-      height: fit-content;
+    padding: 2rem 1rem 1rem 1rem;
+    position: relative;
+    height: fit-content;
 
-      flex-direction: column;
-      width: 100%;
-      gap: 0;
-      box-sizing: border-box;
-      /* Zorg ervoor dat padding de breedte niet overschrijdt */
-      padding: 5rem 2rem;
-      /* Voeg wat padding toe voor leesbaarheid */
+    section {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100vw;
 
-      & .speaker-img-kunstinc {
-        height: 400px;
-        width: 364px;
-        margin-bottom: 1rem;
+      & .speaker.img {
+        min-width: fit-content;
+      }
 
-        & h1 {
-          font-size: .8rem;
+      & .speaker {
+        min-width: fit-content;
+      }
+
+      .button-container.mobile {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        position: static;
+
+        & a {
+          font-size: 1.2rem;
         }
-      }
-
-      & .speakers-about,
-      .speaker-insights,
-      .speakers-reflection {
-        display: block;
-        width: 100%;
-      }
-
-      & .speakers-about {
-
-        .code {
-          margin-top: 1rem;
-        }
-      }
-
-      & .speakers-reflection {
-        width: 83%;
-        margin: 2rem 0 0 0;
       }
     }
-  }
 
-  img {
-    width: 100%;
-    /* Maak de afbeelding 100% breedte van de container */
-    height: auto;
-    /* Zorg ervoor dat de afbeelding proportioneel schaalt */
+    .button-container {
+      display: none;
+    }
   }
 }
-
-
-/* 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
