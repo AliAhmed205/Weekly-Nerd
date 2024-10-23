@@ -569,6 +569,7 @@ footer {
       width: 100%;
       margin-left: auto;
       justify-content: end;
+      align-items: center;
       position: fixed;
       transition: .5s;
       z-index: 99;
@@ -640,12 +641,15 @@ footer {
 
           & li {
             list-style-type: none;
+            display: block;
 
            &  a {
               text-decoration: none;
               color: white;
               font-size: 1.2rem;
               font-family: var(--titel-font);
+              display: flex;
+              padding: 1rem;
             }
           }
         }
@@ -669,6 +673,7 @@ footer {
         text-decoration: none;
         display: flex;
         padding: 1rem;
+        margin: 0 auto;
 
       & h1 {
         position: relative;

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.scroll-content');
   const mobileNav = document.getElementById('mobile-navigation');
   const speakersHeader = document.getElementById('speakers-header');
+  const body = document.body;
 
   // Smooth scroll into view on focus
   links.forEach(link => {
@@ -37,11 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Event listener voor de open-button
   menuBtn.addEventListener('click', () => {
     menuList.classList.add('show');
+    // Scrollen uitschakelen
+    body.style.overflow = 'hidden';
   });
   
   // Event listener voor de close-button
   closeBtn.addEventListener('click', () => {
     menuList.classList.remove('show');
+    // Scrollen weer inschakelen
+    body.style.overflow = 'auto';
   });
   
   // Event listener voor elk a-element binnen het menu
@@ -49,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
   menuItems.forEach(item => {
     item.addEventListener('click', () => {
       menuList.classList.remove('show');
+      // Scrollen weer inschakelen
+      body.style.overflow = 'auto';
     });
   });  
 
